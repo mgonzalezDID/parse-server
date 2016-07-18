@@ -15,7 +15,7 @@ var api = new ParseServer({
   databaseURI: databaseUri || 'mongodb://mgonzalez:mgonzalez1234@ds061620.mlab.com:61620/backpushtestdb',
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
   appId: process.env.APP_ID || 'myAppId',
-  /*clientKey: 'herokupushtestclient',*/
+  clientKey: 'herokupushtestclient',
   masterKey: process.env.MASTER_KEY || '', //Add your master key here. Keep it secret!
   serverURL: process.env.SERVER_URL || 'http://localhost:1337/parse',  // Don't forget to change to https if needed
   liveQuery: {
