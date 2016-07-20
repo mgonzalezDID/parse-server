@@ -14,7 +14,7 @@
     "parse": "~1.8.0",
     "parse-server": "~2.2.12",
     "pushy-node": "~1.0.1",
-    "pushy-adapter": "~1.0.21",
+    "pushy-adapter": "~1.0.24",
     "parse-server-onesignal-push-adapter": "~1.0.0"
   },
   "scripts": {
