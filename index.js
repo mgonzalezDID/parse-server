@@ -5,10 +5,11 @@ var express = require('express');
 var ParseServer = require('parse-server').ParseServer;
 var path = require('path');
 var Pushy = require('pushy-node');
- 
-// Plug in your Secret API Key 
-// Get it here: https://app.pushy.me/ 
 var pushyAPI = new Pushy('be4e26586f14abbe52c759b175869d7022bbf4adacd5914e006bb2a50d4ed569');
+var PushyPushAdapter = require('PushyPushAdapter');
+var pushyPushAdapter = new PushyPushAdapter({
+  pushyApiKey:"be4e26586f14abbe52c759b175869d7022bbf4adacd5914e006bb2a50d4ed569"
+});
 
 var databaseUri = process.env.DATABASE_URI || process.env.MONGODB_URI;
 
