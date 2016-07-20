@@ -7,9 +7,9 @@ var path = require('path');
 var Pushy = require('pushy-node');
 var PushyPushAdapter = require('pushy-adapter');
 var pushyAPI = new Pushy('be4e26586f14abbe52c759b175869d7022bbf4adacd5914e006bb2a50d4ed569');
-var pushyPushAdapter = new PushyPushAdapter({
+/*var pushyPushAdapter = new PushyPushAdapter({
   pushyApiKey:"be4e26586f14abbe52c759b175869d7022bbf4adacd5914e006bb2a50d4ed569"
-});
+});*/
 
 var databaseUri = process.env.DATABASE_URI || process.env.MONGODB_URI;
 
