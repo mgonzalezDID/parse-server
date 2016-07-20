@@ -36,10 +36,7 @@ var api = new ParseServer({
     classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
   },
   push: {
-      android: {
-        senderId: '136537246544',
-        apiKey: 'AIzaSyA-c1B76BmFx--1Bk7qfCD10_t1jgwc09o'
-    }
+      adapter: pushyPushAdapter
   }
 });
 // Client-keys like the javascript key or the .NET key are not necessary with parse-server
