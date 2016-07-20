@@ -14,7 +14,7 @@
     "parse": "~1.8.0",
     "parse-server": "~2.2.12",
     "pushy-node": "~1.0.1",
-    "pushy-adapter": "~1.0.7"
+    "pushy-adapter": "~1.0.18"
   },
   "scripts": {
     "start": "node index.js"
