@@ -5,6 +5,7 @@ RUN mkdir parse
 ADD . /parse
 WORKDIR /parse
 RUN npm install
+RUN npm install pushy-node --save
 
 ENV APP_ID setYourAppId
 ENV MASTER_KEY setYourMasterKey
