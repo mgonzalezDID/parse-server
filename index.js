@@ -11,6 +11,12 @@ var pushyAPI = new Pushy('be4e26586f14abbe52c759b175869d7022bbf4adacd5914e006bb2
   pushyApiKey:"be4e26586f14abbe52c759b175869d7022bbf4adacd5914e006bb2a50d4ed569"
 });*/
 
+var OneSignalPushAdapter = require('parse-server-onesignal-push-adapter');
+var oneSignalPushAdapter = new OneSignalPushAdapter({
+  oneSignalAppId:"your-one-signal-app-id",
+  oneSignalApiKey:"your-one-signal-api-key"
+});
+
 var databaseUri = process.env.DATABASE_URI || process.env.MONGODB_URI;
 
 if (!databaseUri) {
